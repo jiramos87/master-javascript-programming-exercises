@@ -4,7 +4,11 @@ var obj = {
     c: 4
 };
 function removeNumberValues(obj) {
-    // your code here
+    for(prop in obj) {
+        if(typeof obj[prop] === 'number') {
+            delete obj[prop];
+        }
+    }
 }
 
 removeNumberValues(obj);

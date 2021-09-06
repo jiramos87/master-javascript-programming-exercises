@@ -13,4 +13,4 @@ test('Function must return an object with each pair of elements as key-value.', 
 
     output = fromListToObject([['name', 'Jerry'], ['pet', 'Cat']])
     expect(output).toEqual({ name: 'Jerry', pet: 'Cat' })
-})
+});

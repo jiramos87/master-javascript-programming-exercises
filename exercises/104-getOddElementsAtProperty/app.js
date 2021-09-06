@@ -3,7 +3,13 @@ var obj = {
 };
 
 function getOddElementsAtProperty(obj, key) {
-    // your code here
+  var oddArray = [];
+  for (var prop in obj[key]) {
+      if (obj[key][prop] % 2 === 1) {
+       oddArray.push(obj[key][prop]);
+      }
+  }
+  return oddArray;
 }
 
 var output = getOddElementsAtProperty(obj, 'key');
